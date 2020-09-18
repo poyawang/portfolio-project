@@ -26,15 +26,19 @@
   </main>
   <footer>
     <div id="copyright">
-      &copy; 2020 | Po-Ya Wang | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a> 
+      &copy; <span id='year'></span> | Po-Ya Wang | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a> 
       <br>Last Updated: <span id="datetime"></span> 
     </div>
   </footer>
   <script>
-    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'}
-    // document.getElementById('currentdate').innerHTML = new Date().toLocaleDateString('en-US', options);
-    var dt = new Date();
-    document.getElementById('datetime').innerHTML = dt.toLocaleString('en-US');
+    // const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'}
+    // // document.getElementById('currentdate').innerHTML = new Date().toLocaleDateString('en-US', options);
+    // var dt = new Date();
+    // document.getElementById('datetime').innerHTML = dt.toLocaleString('en-US');
+    var theYear = new Date().getFullYear();
+    document.getElementById('year').innerHTML = theYear;
+    var time = document.lastModified;
+    document.getElementById('datetime').innerHTML = time;
   </script>
   </div>
 </body>
