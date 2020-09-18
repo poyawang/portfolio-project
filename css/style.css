@@ -1,3 +1,7 @@
+#content{
+    max-width: 800px;
+    margin: 0 auto;
+}
 header h1 {
     font-size: 40px;
     font-family: Mukta, Helvetica, sans-serif;
@@ -12,21 +16,23 @@ header img {
     height: 200px;
     width: auto;
     border-radius: 20px;
-    margin-left: 75%;
-    margin-top: -18%;
+    float: right;
+    margin: 50px;
+    margin-right: 50px;
+    margin-top: -90px;
 }
 main {
     font-family: Mukta, Helvetica, sans-serif;
     color: #181818;
     display: block;
-    margin-top: -10%;
-    margin-left: 20px;
+    margin-top: 70px;
+    margin-left: 50px;
 }
 footer {
     background-color: #E6E6FA;
     height: 50px;
     border-radius: 20px;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     font-family: Mukta, Helvetica, sans-serif;
     padding-top: 20px;
