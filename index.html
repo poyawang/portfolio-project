@@ -1,9 +1,39 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Po Ya Wang</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Po-Ya Wang Home Page</title>
 </head>
 <body>
- <h1>Po Ya Wang </h1>
+  <header>
+    <h1>Po-Ya Wang</h1>
+    <div id="self-picture">
+      <img src="images/mewithdrink.jpg" alt="picture of me in red dress">
+    </div>
+  </header>
+  <main>
+    <h3>WDD230: Assignment Portal</h3>
+    <nav>
+      <ul>
+        <li>Lesson 02: <a href="">Assignment Link</a></li>
+        <li>Lesson 03: <a href="">Assignment Link</a></li>
+        <li>Lesson 04: <a href="">Link</a> | <a href="">Link</a></li>
+      </ul>
+    </nav>
+  </main>
+  <footer>
+    <div id="copyright">
+      &copy; 2020 | Po-Ya Wang | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a> 
+      <br>Last Updated: <span id="datetime"></span> 
+    </div>
+  </footer>
+  <script>
+    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'}
+    // document.getElementById('currentdate').innerHTML = new Date().toLocaleDateString('en-US', options);
+    var dt = new Date();
+    document.getElementById('datetime').innerHTML = dt.toLocaleString('en-US');
+  </script>
 </body>
-</html>  
+</html>

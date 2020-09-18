@@ -1,0 +1,30 @@
+header h1 {
+    font-size: 40px;
+    text-align: center;
+    background-color: #E6E6FA;
+    color: #2F4F4F;
+    height: 80px;
+    border-radius: 20px;
+    padding-top: 35px;
+}
+header img {
+    height: 200px;
+    width: auto;
+    border-radius: 20px;
+    margin-left: 75%;
+    margin-top: -18%;
+}
+main {
+    color: #181818;
+    display: block;
+    margin-top: -20%;
+    margin-left: 20px;
+}
+footer {
+    background-color: #E6E6FA;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 20px;
+}
