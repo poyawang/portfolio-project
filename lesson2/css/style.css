@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Secular+One&display=swap');
+
+
+
+header {
+    background-color: #BDB76B;
+    color: rgb(49, 48, 48);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    border-radius: 20px; 
+    height: 200px;
+    margin:20px;
+    padding-top:1px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center
+}
+#dinTaiFung {
+    grid-column:1/2;
+}
+#medium {
+    grid-column:2/3;
+}
+#sephora {
+    grid-column:3/4;
+}
+#dinTaiFung, #medium, #sephora {
+    margin: 20px;
+    border-style: groove;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Mukta', sans-serif;
+}
+#dinTaiFung h3, #medium h3, #sephora h3{
+    font-size: 28px;
+    color: black;
+    margin: 10px;
+    border-radius: 5px;
+}
+#dinTaiFung a, #medium a, #sephora a {
+    color: #353333;
+    font-size:18px;
+
+}
+img {
+    border-style: ridge;
+    margin-top: 10px;
+    width: 85%;
+}
+p {
+    color:rgb(48, 48, 46);
+    font-size: 18px;
+}
+
+footer {
+    background-color: #BDB76B;
+    color: rgb(49, 48, 48);
+    text-align: center;
+    font-size:15px;
+    font-family: 'Mukta', sans-serif;
+}
+footer a {
+    color: rgb(49, 48, 48);
+}
