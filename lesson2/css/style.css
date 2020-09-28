@@ -14,10 +14,10 @@ header {
 
 #grid {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: 1fr;
     justify-content: center
 }
-#dinTaiFung {
+/* #dinTaiFung {
     grid-column:1/2;
 }
 #medium {
@@ -25,7 +25,7 @@ header {
 }
 #sephora {
     grid-column:3/4;
-}
+} */
 #dinTaiFung, #medium, #sephora {
     margin: 20px;
     border-style: groove;

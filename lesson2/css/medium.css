@@ -1,0 +1,12 @@
+@media (min-width: 37.5em) {
+    #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+   
+@media (min-width: 60em) {
+    #grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+   
