@@ -19,15 +19,7 @@ header p {
     grid-template-columns: 1fr;
     justify-content: center
 }
-/* #dinTaiFung {
-    grid-column:1/2;
-}
-#medium {
-    grid-column:2/3;
-}
-#sephora {
-    grid-column:3/4;
-} */
+
 #dinTaiFung, #medium, #sephora {
     margin: 20px;
     border-style: groove;

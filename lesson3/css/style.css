@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:400,700');
+@import url('https://fonts.googleapis.com/css?family=Sriracha:400,700'); 
+
+#content{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+	background-color:#a3bdd6;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+    padding: 10px;
+}
+
+footer, footer a {
+    color: black;
+    font-family: Mukta, Helvetica, sans-serif;
+    font-size:13px;
+}
+h1 {
+    font-size: 2rem;
+    font-family: "Sriracha";
+}
+h2 {
+    color: #677f96;
+    font-family: "Sriracha";
+}
+h3 {
+    font-size:16px;
+    font-family: Mukta, Helvetica, sans-serif;
+}
+p, table, ul{
+    font-family: Mukta, Helvetica, sans-serif;
+    font-size:16px;
+    margin-left:20px;
+}
+
+nav {
+	background-color: #dbc2bc;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #2e4357;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Mukta, Helvetica, sans-serif;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: white;
+}
+.active {
+    color: rgba(179, 66, 118, 0.787);
+}
+main {
+    margin:20px;
+}
+
+#JasmineRipa, #StanleyYuan {
+    margin-top:10px;
+    border-style: groove;
+    padding:20px;
+}
+.unsplash {
+    
+    font-size:10px;
+}
+.StanleyFace, .JasmineFace {
+    width:80%;
+}
+table {
+    border-collapse: collapse;
+}
+table, td {
+    border: 1px solid rgb(180, 177, 177);
+    padding:10px;
+    margin-left:20px;
+}
+#PC {   
+    background-color: #a3bdd6;
+    color:#a3bdd6;
+}
+#SC {   
+    background-color: #dbc2bc;
+}
+#A1 {   
+    background-color: #677f96;
+}
+#A2 {   
+    background-color: black;
+}
+.TyHeader {
+    font-weight: bold;
+}
