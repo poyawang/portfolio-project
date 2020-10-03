@@ -8,7 +8,7 @@
         font-size:18px;
     }
 	.StanleyFace, .JasmineFace {
-        width:60%;
+        width:50%;
     }
     table {
         width:500px;
@@ -26,4 +26,6 @@
     table {
         width:700px;
     }
+    .StanleyFace, .JasmineFace {
+        width:50%;
 }
