@@ -80,7 +80,8 @@ main {
     font-size:10px;
 }
 .StanleyFace, .JasmineFace {
-    width:70%;
+    border-radius: 20px;
+    width:50%;
 }
 table {
     border-collapse: collapse;
