@@ -1,0 +1,40 @@
+@media only screen and (min-width: 37.5em) {
+
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; 
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    main {
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width: 60em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; 
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    main {
+        max-width:960px;
+        margin:0 auto;
+        padding:10px;
+    }
+}

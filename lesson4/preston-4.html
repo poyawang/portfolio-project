@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='Preston town weather forecast from Weather Check Website'>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lesson4/css/style.css">
+    <link rel="stylesheet" href="../lesson4/css/medium.css">
+    <title>Weather Check-Preston</title>
+</head>
+<body>
+    <div id='content'>
+        <header>
+            <img class='logo' src="../lesson4/images/logo.png" alt="weather check logo">
+            <h1>Weather Check</h1>
+            <div>Let's open the window to feel the weather.</div>
+        </header>
+        <nav>
+            <ul class='navigation'>
+                <li><a href="" onclick="toggleMenu()">&#9776Menu</a></li>
+                <span class='navigation-body'>
+                    <li><a href="">Home</a></li>
+                    <li><a href="../lesson4/preston-4.html" class='active'>Preston</a></li>
+                    <li><a href="">Soda Springs</a></li>
+                    <li><a href="">Fish Haven</a></li>
+                    <li><a href="">Storm Center</a></li>
+                    <li><a href="">Gallery</a></li>
+                </span>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class='hero'>
+                <p>Hero w/ weather summary</p>
+            </div>
+            <div class='5day'>
+                <p>5 Day Forecast</p>
+            </div>
+            <div class='article'>
+                <p>Article</p>
+            </div>
+            <div class='contact'>
+                <p>Contact information</p>
+            </div>
+        </main>
+        <footer>
+            <div id="copyright">
+                &copy; <span id='year'></span> | Po-Ya Wang | Idaho | <a href="https://www.byui.edu">BYU-Idaho</a> 
+                <br>Last Updated: <span id="datetime"></span>
+            </div>
+        </footer>
+        <script src="../lesson4/js/preston.js"></script>
+    </div>
+</body>
+</html>

@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Sriracha&display=swap');
 
 #content{
     max-width: 960px;
     margin: 0 auto;
+    min-height:100vh;
 }
 
 header,
@@ -22,7 +23,7 @@ footer, footer a {
 }
 h1 {
     font-size: 2rem;
-    font-family: "Sriracha";
+    font-family: 'Sriracha', cursive;
 }
 h2 {
     color: #677f96;
