@@ -20,27 +20,26 @@ h2 {
     color: #677f96;
     font-family: "Sriracha";
     text-align:center;
-    
 }
 p, ul {
     font-family: Mukta, Helvetica, sans-serif;
     font-size:16px;
 }
 nav {
-	margin: 0;
-    overflow: hidden;
     background-color: #dbc2bc;
-	text-align: center;
+    text-align: center;
 }
 .navigation {
-    /* list-style: none; */
+    list-style:none;
     padding:0;
-    
+    margin: 0 auto;
+    overflow: hidden;
 }
-.navigation-body {
+.navigation li:first-child {
+    display:block;
+}
+.navigation li {
     display:none;
-    height:0%;
-    transition:height 5s;
 }
 nav a, nav ul{
 	display: block;
@@ -56,9 +55,8 @@ nav a:hover {
 	background-color: #bbb;
 	color: white;
 }
-.responsive .navigation-body {
-    height:100%;
-    display:unset;
+.responsive li{
+    display:block;
 }
 .active {
     color: rgba(179, 66, 118, 0.787);
@@ -69,7 +67,6 @@ main {
 main div{
     border-style:groove;
     padding-left:20px;
-    margin:5px;
 }
 footer, footer a {
     color: black;

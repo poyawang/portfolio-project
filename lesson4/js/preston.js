@@ -1,6 +1,5 @@
-function toggleMenu(e) {
+function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-    e.preventDefault();
 }
 
 var theYear = new Date().getFullYear();
