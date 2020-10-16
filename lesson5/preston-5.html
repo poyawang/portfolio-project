@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='Preston town weather forecast from Weather Check Website'>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lesson5/css/style.css">
+    <link rel="stylesheet" href="../lesson5/css/medium.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Weather Check-Preston</title>
+</head>
+
+<body>
+    <div id='content'>
+        <div id='message'>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <img class='logo' src="../lesson5/images/logo.png" alt="weather check logo">
+            <h1>Weather Check</h1>
+            <div>Let's open the window to feel the weather.</div>
+        </header>
+        <nav>
+            <ul class='navigation'>
+                <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="../lesson5/preston-5.html" class='active'>Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class='hero'>
+                <img class='hero_img ' src="../lesson5/images/preston_img.jpg" alt="photo of idaho">
+                <section class='weather_sum'>
+                    <h3 class='wf'>Weather Summary</h3>
+                    <p>Currently: Sunny</p>
+                    <p>High: 76°F</p>
+                    <p>Wind Chilli: °F</p>
+                    <p>Humidity: 69%</p>
+                    <p>Wind Speed: 5mph</p>
+                </section>
+            </div>
+            <div class='fiveday'>
+                <h3>5 Day Forecast</h3>
+                <table class='forecast_table'>
+                    <tr>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../lesson5/images/sunnyday.png" alt="sunnyday_icon"></td>
+                        <td><img src="../lesson5/images/sunnyday.png" alt="sunnyday_icon"></td>
+                        <td><img src="../lesson5/images/sunnyday.png" alt="sunnyday_icon"></td>
+                        <td><img src="../lesson5/images/rainingday.png" alt="rainingday_icon"></td>
+                        <td><img src="../lesson5/images/rainingday.png" alt="rainingday_icon"></td>
+                    </tr>
+                    <tr>
+                        <td>46°F</td>
+                        <td>53°F</td>
+                        <td>51°F</td>
+                        <td>41°F</td>
+                        <td>44°F</td>
+                    </tr>
+                </table>
+            </div>
+            <div class='article'>
+                <img class='article_img' src="../lesson5/images/article_img.jpg" alt="img of sky">
+                <h3>After Years of Fighting, Idaho Retains Climate Change in Its Education Guidelines</h3>
+                <p>By Livia Albeck-Ripka</p>
+                <p>A years-long battle over whether Idaho would require its science teachers to teach about global
+                    warming was resolved Thursday when the State Senate education committee voted to adopt standards
+                    that included sections on human-caused climate change.
+                    Idaho’s legislature had scrubbed all mentions of human-caused climate change from its teaching
+                    standards last year. The State Department of Education then put forth revised standards, but this
+                    month the House education committee voted to gut the supporting content, which was designed to help
+                    teachers assign coursework and included multiple mentions of climate change. On Thursday, the Senate
+                    committee approved the revised standards in full, including the supporting content, on a 6 to 3 vote
+                    that drew support from both parties. Because both chambers did not agree to reject the standards,
+                    they will go into effect.
+                    State Senator Janie Ward-Engelking of Boise, a Democrat on the education committee, said the
+                    supporting content was important to include. “When a new teacher comes in, they need to see all the
+                    concepts that they’re responsible to teach,” Ms. Ward-Engelking said. “To be honest, it’s kind of
+                    embarrassing that it’s been so controversial.”
+                    Emily Her, 17, a senior at Timberline High School in Boise who started a petition and appeared with
+                    her classmates at hearings to support the revised standards, said she was glad that all students in
+                    Idaho would learn about climate change. “It was definitely a group effort, and I was really happy
+                    that it paid off and that they decided to listen to us,” she said</p>
+            </div>
+            <div class='contact'>
+                <h3>Contact Information</h3>
+                <img class='preston-map' src="../lesson5/images/preston_map.png" alt="map of preston">
+                <p><i class="material-icons">place</i> 53N 2nd E Preston, ID 83263</p>
+                <p><i class="material-icons">local_phone</i> (472) 827-7828</p>
+                <p><i class="material-icons">local_post_office</i> huc@hel.cy</p>
+                <div class="social">
+                    <a href="http://www.facebook.com" target="_blank"><img  class='fb' src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png" alt="facebook icon"></a>
+                    <a href="http://www.instagram.com" target="_blank"><img class='ig' src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png" alt="instagram icon"></a>
+                    <a href="http://www.youtube.com" target="_blank"><img class='yb'src="https://byui-cit.github.io/wdd130/images/icons/color/youtube.png" alt="youtube icon"></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="copyright">
+                &copy; <span id='year'></span> | Po-Ya Wang | Idaho | <a href="https://www.byui.edu">BYU-Idaho</a>
+                <br><span id='current-date'></span>
+            </div>
+        </footer>
+        <script src="../lesson5/js/preston.js"></script>
+    </div>
+</body>
+
+</html>
+<p></p>

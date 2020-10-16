@@ -1,0 +1,59 @@
+@media only screen and (min-width: 37.5em) {
+
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; 
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    main {
+        text-align: center;
+    }
+    .forecast_table,th,td {
+        margin:65px;
+    }
+    .preston-map {
+        display:block;
+        float:right;
+        width:180px;
+        padding-right:40px;
+    }
+
+}
+@media only screen and (min-width: 60em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; 
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+        font-size:1.1rem;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    main {
+        max-width:960px;
+        margin:0 auto;
+        padding:10px;
+    }
+    main div{
+        margin:20px;;
+    }
+    .preston-map {
+        display:block;
+        float:right;
+        width:200px;
+        padding-right:200px;
+    }
+}
