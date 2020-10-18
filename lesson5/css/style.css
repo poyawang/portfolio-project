@@ -80,8 +80,7 @@ main p {
     display: none;
 }
 .hero_img {
-    width:100%;
-    height:250px;
+    width: 100%;
 }
 .wf {
     color:rgb(24, 24, 24);
@@ -101,9 +100,14 @@ main p {
     opacity: .8;
     color: rgb(24, 24, 24);
     padding:5px;
+    line-height: 0.5rem;
 }
 .weather_sum p{
     font-size:14px;
+}
+.fiveday {
+    margin-top:3rem;
+    padding-bottom:1rem;
 }
 .forecast_table,th,td {
     border-collapse: collapse;
@@ -121,7 +125,7 @@ main p {
     width:90%;
     padding:10px;
 }
-.hero, .fiveday, .article,.contact {
+.hero, .article,.contact {
     margin:10px;
 }
 .contact {

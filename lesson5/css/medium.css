@@ -25,6 +25,16 @@
         width:150px;
         padding-left:130px;
     }
+    .hero_img {
+        width: 100%;
+    }
+    .fiveday {
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .weather_sum {
+        line-height:1rem;
+    }
 
 }
 @media only screen and (min-width: 60em) {
@@ -55,5 +65,8 @@
         float:left;
         width:170px;
         padding-left:250px;
+    }
+    .hero_img {
+        width: 100%;
     }
 }
