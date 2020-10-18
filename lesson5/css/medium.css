@@ -21,9 +21,9 @@
     }
     .preston-map {
         display:block;
-        float:right;
-        width:180px;
-        padding-right:40px;
+        float:left;
+        width:150px;
+        padding-left:130px;
     }
 
 }
@@ -52,8 +52,8 @@
     }
     .preston-map {
         display:block;
-        float:right;
-        width:200px;
-        padding-right:200px;
+        float:left;
+        width:170px;
+        padding-left:250px;
     }
 }
