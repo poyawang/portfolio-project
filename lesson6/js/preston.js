@@ -17,4 +17,3 @@ document.getElementById('current-date').innerHTML = output;
 if (date.getDay() == 5) {
     document.getElementById('message').style.display = 'block';
 }
-
