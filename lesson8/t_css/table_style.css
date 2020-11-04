@@ -1,6 +1,6 @@
 table, tr, td{ 
     border-collapse: collapse;
-    border: 1px solid #e7f0ed;
+    border: 1px solid rgb(209, 209, 209);
     font-family:'Ubuntu';
     padding:5px;
     text-align: center;
@@ -34,4 +34,7 @@ tr {
 }
 tr:nth-child(7) td:nth-child(1){
     font-style: italic;
+}
+table{
+    box-shadow: 8px 8px 12px #628ca6;
 }
