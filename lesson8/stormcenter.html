@@ -35,31 +35,31 @@
             <form method='get' action="../lesson8/thanks.html">
                 <div class='form-item'>
                     <label for="firstname" class='required'> First Name</label>
-                        <input type="text" name='firstname' pattern='(\w| ){5,}' required>
+                    <input type="text" name='firstname' pattern='(\w| ){5,}' required>
                 </div>
                 <div class='form-item'>
                     <label for="lastname" class='required'> Last Name</label>
-                        <input type="text" name='lastname' pattern='(\w| ){5,}' required>
+                    <input type="text" name='lastname' pattern='(\w| ){5,}' required>
                 </div>
                 <div class='form-item'>
                     <label for="email" class='email'> Email</label>
-                        <input type="email" name='email' placeholder="sample@gmail.com">                 
+                    <input type="email" name='email' placeholder="sample@gmail.com">                 
                 </div>
                 <div class='form-item'>
                     <label for="phone" class='required'> Phone</label>
-                        <input type="tel" name='phone' placeholder="1234567890" required>                  
+                    <input type="tel" name='phone' placeholder="1234567890" required>                  
                 </div>
                 <div class='form-item'>
                     <label for="zipcode" class='required'> Zip Code</label>
-                        <input type="number" name='zipcode' required>
+                    <input type="number" name='zipcode' required>
                 </div>
                 <div class='form-item'>
                     <label for="stormdate" class='stormdate'> Storm Date</label>
-                        <input type="date" name='stormdate'>
+                    <input type="date" name='stormdate'>
                 </div>
                 <div class='form-item'>
                     <label for="stormtype"> Storm Type</label>
-                        <input list='stormtype' id='type' name='type'>
+                    <input list='stormtype' id='type' name='type'>
                 </div>
                 <datalist id="stormtype">
                     <option value="Flash Flood">
@@ -70,7 +70,7 @@
                 </datalist>
                 <div class='form-item'>
                 	<label class="severity" for="rating">Rating: &nbsp;&nbsp;&nbsp;
-                	    <input type="range" id="rating" value="5" min="1" max="10" step="1" 
+                	<input type="range" id="rating" value="5" min="1" max="10" step="1" 
                 	    list="severity" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 	    <span id="ratingvalue">5</span>
                 	</label>
@@ -99,11 +99,11 @@
                     </label>
                 </div>
                 <div class='form-item'>
-                    <label class='levelrate'>User In-danger Level
-                        <label class='level'><input type='radio' name='level' value='yes'> Yes</label>
-                        <label class='level'><input type='radio' name='level' value='maybe'> Maybe</label>
-                        <label class='level'><input type='radio' name='level' value='no'> No</label>
-                    </label>
+                    <label class='levelrate'>User In-danger Level</label>
+                    <label class='level'><input type='radio' name='level' value='yes'> Yes</label>
+                    <label class='level'><input type='radio' name='level' value='maybe'> Maybe</label>
+                    <label class='level'><input type='radio' name='level' value='no'> No</label>
+                    
                 </div>
                 <div class='form-item'>
                     <label for="comment">Additional Information or Comment</label>
