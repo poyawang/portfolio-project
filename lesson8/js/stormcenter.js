@@ -11,3 +11,8 @@ const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', '
 let date = new Date();
 let output = dow[date.getDay()]+', '+ date.getDate() + ' ' + month[date.getMonth()] + ' '+date.getFullYear();
 document.getElementById('current-date').innerHTML = output;
+
+//adjust rating
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
