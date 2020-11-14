@@ -135,11 +135,7 @@ main p {
 .preston-map {
     display:none;
 }
-footer, footer a {
-    color: black;
-    font-family: Mukta, Helvetica, sans-serif;
-    font-size:13px;
-}
+
 .social {
     border-style: none;
 }
