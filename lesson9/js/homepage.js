@@ -1,46 +1,27 @@
 const url = 'https://byui-cit230.github.io/weather/data/towndata.json'
-const town1 = document.getElementById('town1')
-const town2 = document.getElementById('town2')
-const town3 = document.getElementById('town3')
+const townCardsElement = document.getElementById('town-cards');
 
 
 fetch(url)
     .then(response => response.json())
-    .then(jsonObject => {
-        const towns = jsonObject['towns'];
-        let h1='';
-        h1 += `<div class='towncatelog'><h2>${towns[4].name}</h2>
-        <p class='motto'>${towns[4].motto}</p>
-        <P>Year Founded: ${towns[4].yearFounded}</P>
-        <P>Population: ${towns[4].currentPopulation}</P>
-        <P>Average Rainfall: ${towns[4].averageRainfall}</P></div>
-        <img src='../lesson9/img/town1.jpg' alt='${towns[4].photo}'>
-        `;
-        
-        town1.innerHTML = h1;
-        
-        
-        let h2= '';
-        h2 += `<div class='towncatelog'><h2>${towns[1].name}</h2>
-        <p class='motto'>${towns[1].motto}</p>
-        <P>Year Founded: ${towns[1].yearFounded}</P>
-        <P>Population: ${towns[1].currentPopulation}</P>
-        <P>Average Rainfall: ${towns[1].averageRainfall}</P></div>
-        <img src='../lesson9/img/town2.jpg' alt='${towns[1].photo}'>
-        `;
-
-        town2.innerHTML = h2;
-        
-
-        let h3 = '';
-        h3 += `<div class='towncatelog'><h2>${towns[5].name}</h2>
-        <p class='motto'>${towns[5].motto}</p>
-        <P>Year Founded: ${towns[5].yearFounded}</P>
-        <P>Population: ${towns[5].currentPopulation}</P>
-        <P>Average Rainfall: ${towns[5].averageRainfall}</P></div>
-        <img src='../lesson9/img/town3.jpg' alt='${towns[5].photo}'>
-        `;
-        
-        town3.innerHTML =h3;
-        
+    .then(data => {
+        for (town of data.towns) {
+            if (town.name == 'Fish Haven' || town.name == 'Soda Springs' || town.name == "Preston") {
+                let townCard = document.createElement('div');
+                townCard.setAttribute('class', 'town-card');
+                let h = `<div class="town-summary">
+                            <h3 class='town-title'>${town.name}</h3>
+                            <p class='town-motto'>${town.motto}</p>
+                            <p>Year Founded: ${town.yearFounded}</p>
+                            <p>Population: ${town.currentPopulation}</p>
+                            <p>Annual RainFall: ${town.averageRainfall}</p>
+                         </div>
+                         <div class='town-img'>
+                            <img src='../lesson9/img/${town.photo}' alt='${town.name}'>
+                         </div>
+                        </div>`;
+                townCardsElement.appendChild(townCard);
+                townCard.innerHTML = h;
+            }
+        }
     });

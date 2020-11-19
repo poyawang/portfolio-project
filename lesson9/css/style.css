@@ -78,15 +78,15 @@ footer, footer a {
 p {
     text-align: center;
 }
-.motto {
+.town-motto {
     font-size:13px;
 }
-#town1, #town2, #town3 {
+.town-card {
     background-color: #f0ddd8;
     margin:10px;
     padding:1px 0 15px 0;
 }
-#town1 img, #town2 img, #town3 img{
+.town-img{
     width:80%;
     display: block;
     margin:0 auto;

@@ -10,14 +10,14 @@
         grid-column: 1;
         grid-row: 1;
     } */
-    #town1, #town2, #town3 {
+    .town-card {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .town:nth-child(odd) img {
+    .town-card:nth-child(odd) img{
         grid-column: 2;
       }
-    .towncatelog:nth-child(odd) {
+    .town-card:nth-child(odd) .town-summary {
         grid-column: 1;
         grid-row: 1;
     }
@@ -28,18 +28,20 @@
     .snowflake {
         display:none;
     }
-    .town {
+    .town-cards {
         display:grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .town p, .town h2 {
+    .town-summary {
         grid-column: 1/2;
     }
 
-    .town img{
+    .town-img img{
+        width:100%;
         grid-column: 1/2;
+        
     }
-    #town1, #town2, #town3 {
+    .town-card {
         display:block;
         justify-content: center;
     }
