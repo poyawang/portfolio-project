@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content='Preston town weather forecast from Weather Check Website'>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../lesson5/css/style.css">
-    <link rel="stylesheet" href="../lesson5/css/medium.css">
+    <link rel="stylesheet" href="../lesson10/css/style.css">
+    <link rel="stylesheet" href="../lesson10/css/medium.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Weather Check-Preston</title>
 </head>
@@ -18,7 +18,7 @@
             Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
         </div>
         <header>
-            <img class='logo' src="../lesson5/images/logo.png" alt="weather check logo">
+            <img class='logo' src="../lesson6/images/logo.png" alt="weather check logo">
             <h1>Weather Check</h1>
             <div>Let's open the window to feel the weather.</div>
         </header>
@@ -26,7 +26,7 @@
             <ul class='navigation'>
                 <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
                 <li><a href="../lesson9/homepage.html">Home</a></li>
-                <li><a href="../lesson5/preston-5.html" class='active'>Preston</a></li>
+                <li><a href="../lesson6/preston-6.html" class='active'>Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -36,19 +36,24 @@
         <main>
             <h2>Preston Idaho</h2>
             <div class='hero'>
-                <img class='hero_img' src="../lesson5/images/preston_img.jpg" alt="photo of idaho">
+                <img class='hero_img' src="../lesson6/images/test-960.jpg" alt="photo of idaho"
+                    srcset ="../lesson6/images/test-425.jpg 425w,
+                            ../lesson6/images/test-600.jpg 600w,
+                            ../lesson6/images/test-960.jpg 960w"
+                    sizes = "50vw">
+                    
                 <section class='weather_sum'>
                     <h3 class='wf'>Weather Summary</h3>
-                    <p>Currently: Sunny</p>
-                    <p>High: 76°F</p>
-                    <p>Wind Chilli: °F</p>
-                    <p>Humidity: 69%</p>
-                    <p>Wind Speed: 5mph</p>
+                    <p>Currently: <span id='description'></span></p>
+                    <p>High: <span id='temp'></span> &deg;F</p>
+                    <p>Wind Chilli: <span id='windChill'></span> &deg;F</p>
+                    <p>Humidity: <span id='humidity'></span> %</p>
+                    <p>Wind Speed: <span id='windSpeed'></span> mph</p>
                 </section>
             </div>
-            <div class='fiveday'>
+            <section class='fiveday'>
                 <h3>5 Day Forecast</h3>
-                <table class='forecast_table'>
+                <!-- <table class='forecast_table'>
                     <tr>
                         <th>Wed</th>
                         <th>Thu</th>
@@ -57,11 +62,11 @@
                         <th>Sun</th>
                     </tr>
                     <tr>
-                        <td><img class ='sunny' src="../lesson5/images/sunnyday.png" alt="sunnyday_icon"></td>
-                        <td><img class ='sunny' src="../lesson5/images/sunnyday.png" alt="sunnyday_icon"></td>
-                        <td><img class='sunny' src="../lesson5/images/sunnyday.png" alt="sunnyday_icon"></td>
-                        <td><img class='rainy' src="../lesson5/images/rainingday.png" alt="rainyday_icon"></td>
-                        <td><img class='rainy' src="../lesson5/images/rainingday.png" alt="rainyday_icon"></td>
+                        <td><img class ='sunny' src="../lesson6/images/sunnyday.png" alt="sunnyday_icon"></td>
+                        <td><img class ='sunny' src="../lesson6/images/sunnyday.png" alt="sunnyday_icon"></td>
+                        <td><img class='sunny' src="../lesson6/images/sunnyday.png" alt="sunnyday_icon"></td>
+                        <td><img class='rainy' src="../lesson6/images/rainingday.png" alt="rainyday_icon"></td>
+                        <td><img class='rainy' src="../lesson6/images/rainingday.png" alt="rainyday_icon"></td>
                     </tr>
                     <tr>
                         <td>46°F</td>
@@ -70,10 +75,56 @@
                         <td>41°F</td>
                         <td>44°F</td>
                     </tr>
-                </table>
-            </div>
+                </table> -->
+
+                <div class="five-day-forecast">
+                    <div class="five-day-forecast-item">
+                        <div class="five-day-forecast-heading">Wed</div>
+                        <div class="five-day-forecast-content">
+                            <img src="" alt="no data">
+                            <p id="five-day-temp-0">n/a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="five-day-forecast">
+                    <div class="five-day-forecast-item">
+                        <div class="five-day-forecast-heading">Wed</div>
+                        <div class="five-day-forecast-content">
+                            <img src="" alt="no data">
+                            <p id="five-day-temp-1">n/a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="five-day-forecast">
+                    <div class="five-day-forecast-item">
+                        <div class="five-day-forecast-heading">Wed</div>
+                        <div class="five-day-forecast-content">
+                            <img src="" alt="no data">
+                            <p id="five-day-temp-2">n/a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="five-day-forecast">
+                    <div class="five-day-forecast-item">
+                        <div class="five-day-forecast-heading">Wed</div>
+                        <div class="five-day-forecast-content">
+                            <img src="" alt="no data">
+                            <p id="five-day-temp-3">n/a</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="five-day-forecast">
+                    <div class="five-day-forecast-item">
+                        <div class="five-day-forecast-heading">Wed</div>
+                        <div class="five-day-forecast-content">
+                            <img src="" alt="no data">
+                            <p id="five-day-temp-4">n/a</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div class='article'>
-                <img class='article_img' src="../lesson5/images/article_img.jpg" alt="img of sky">
+                <img class='article_img' src="../lesson6/images/article_img.webp" alt="img of sky">
                 <h3>After Years of Fighting, Idaho Retains Climate Change in Its Education Guidelines</h3>
                 <p>By Livia Albeck-Ripka</p>
                 <p>A years-long battle over whether Idaho would require its science teachers to teach about global
@@ -97,14 +148,14 @@
             </div>
             <div class='contact'>
                 <h3>Contact Information</h3>
-                <img class='preston-map' src="../lesson5/images/preston_map.png" alt="map of preston">
+                <img class='preston-map' src="../lesson6/images/preston_map.webp" alt="map of preston">
                 <p><i class="material-icons">place</i> 53N 2nd E Preston, ID 83263</p>
                 <p><i class="material-icons">local_phone</i> (472) 827-7828</p>
                 <p><i class="material-icons">local_post_office</i> huc@hel.cy</p>
                 <div class="social">
-                    <a href="http://www.facebook.com"><img  class='fb' src="../lesson5/images/facebook.png" alt="facebook icon"></a>
-                    <a href="http://www.instagram.com"><img class='ig' src="../lesson5/images/instagram.jpg" alt="instagram icon"></a>
-                    <a href="http://www.youtube.com"><img class='yb' src="../lesson5/images/youtube.jpg" alt="youtube icon"></a>
+                    <a href="http://www.facebook.com"><img  class='fb' src="../lesson6/images/facebook.png" alt="facebook icon"></a>
+                    <a href="http://www.instagram.com"><img class='ig' src="../lesson6/images/instagram.jpg" alt="instagram icon"></a>
+                    <a href="http://www.youtube.com"><img class='yb' src="../lesson6/images/youtube.jpg" alt="youtube icon"></a>
                 </div>
             </div>
         </main>
@@ -114,8 +165,19 @@
                 <br><span id='current-date'></span>
             </div>
         </footer>
-        <script src="../lesson5/js/preston.js"></script>
+        <script src="../lesson10/js/style.js"></script>
+        <script src="../lesson10/js/windchill.js"></script>
+        <script src="../lesson10/js/weathersummary.js"></script>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Mukta', 'Sriracha']
+        }
+      });
+    </script>
 </body>
 
 </html>

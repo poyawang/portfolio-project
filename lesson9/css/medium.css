@@ -10,6 +10,19 @@
         grid-column: 1;
         grid-row: 1;
     } */
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; 
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
     .town-card {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -25,6 +38,20 @@
 }
 
 @media only screen and (min-width:60em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; 
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+        font-size:1.1rem;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
     .snowflake {
         display:none;
     }
