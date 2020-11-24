@@ -30,7 +30,45 @@
     .weather_sum {
         line-height:1rem;
     }
-
+    h3 {
+        display:block;
+    }
+    .fiveday {
+        width: 100%;
+        display:flex;
+        font-family: Mukta, Helvetica, sans-serif;
+        
+    }
+    .five-day-forecast{
+        margin:0 auto;
+        width:90%;
+        justify-content:center;
+    }
+    .five-day-forecast-item{
+        border: 1px solid black;
+        text-align:center;
+    }
+    .five-day-forecast-heading {
+        border-bottom: 1px solid black;
+        font-weight: bold;
+        text-shadow: 1px 1px;
+        padding: 0.5em 0;
+    
+    }
+    .five-day-forecast-content {
+        font-weight: bold;
+    }
+    .five-day-forecast-content img {
+        width:100%;
+        min-width: 100px;
+        min-height: 75px;
+        padding:0.5em;
+        margin-top: 5px;
+    }
+    .five-day-forecast-content p {
+        margin: 0;
+        padding: 0 0 0.5em;
+    }
 }
 @media only screen and (min-width: 60em) {
     .navigation {
