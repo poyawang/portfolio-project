@@ -16,9 +16,7 @@
     main {
         text-align: center;
     }
-    /* .forecast_table,th,td {
-        margin:65px;
-    } */
+
     .preston-map {
         display:block;
         float:left;
@@ -28,10 +26,7 @@
     .hero_img {
         width: 100%;
     }
-    /* .fiveday {
-        margin-top: 1rem;
-        padding-bottom: 0.5rem;
-    } */
+
     .weather_sum {
         line-height:1rem;
     }

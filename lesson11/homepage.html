@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='Preston town weather forecast from Weather Check Website'>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lesson9/css/style.css">
+    <link rel="stylesheet" href="../lesson9/css/medium.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Weather Check-Preston</title>
+</head>
+
+<body>
+    <div id='content'>
+        <header>
+            <img class='logo' src="../lesson9/img/logo.png" alt="weather check logo">
+            <h1>Weather Check</h1>
+            <div>Let's open the window to feel the weather.</div>
+        </header>
+        <nav>
+            <ul class='navigation'>
+                <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+                <li><a href="../lesson11/homepage.html" class='active'>Home</a></li>
+                <li><a href="../lesson11/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson11/gallery.html" >Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Home</h2>
+            <section class='article'>
+                <img class='snowflake' src="../lesson9/img/snowflake.jpg" alt="snowflake">
+                <h3>From One Snowflake to Another</h3>
+                <p class='author'>By Joshua R Laird</p>
+                <p class='poem'>Welcome my brother said one snowflake to another<br>
+                    Let us paint the land with diamonds of white<br>
+                    Let us put crisp in the air and blanket despair<br>
+                    And brighten the hills with delight<br>
+                    Welcome my brother said one snowflake to the other<br>
+                    Let us widen the smiles of children enthralled<br>
+                    And kindle the aged with their youth<br>
+                    Let us vault from the clouds with a magical shroud<br>
+                    Let us decorate every roof<br>
+                    Welcome my brother said one snowflake to another<br>
+                    Let us dance in the street and stick to the feet<br>
+                    Of those frolicking in the snow<br>
+                    Let us fill up the sky with a brilliant disguise<br>
+                    And sequester the dark from the glow<br>
+                    Welcome my brother said one snowflake to the other<br>
+                    Let us cover the streets with glorious sheets<br>
+                    Until the blackness comes up melting through<br>
+                    This is the end said the snowflake to his friend<br>
+                    And I’m happy to melt here with you.
+                </p>
+            </section>
+            <section class='town-information'>
+                <div id='town-cards' class='town-cards'></div>
+            </section>
+        </main>
+        <footer>
+            <div id="copyright">
+                &copy; <span id='year'></span> | Po-Ya Wang | Idaho | <a href="https://www.byui.edu">BYU-Idaho</a>
+                <br><span id='current-date'></span>
+            </div>
+        </footer>
+        <script src="../lesson9/js/homepage.js"></script>
+        <script src='../lesson9/js/style.js'></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Mukta', 'Sriracha']
+            }
+        });
+    </script>
+</body>
+
+</html>
