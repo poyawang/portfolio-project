@@ -6,44 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content='Preston town weather forecast from Weather Check Website'>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../lesson11/css/preston-style.css">
-    <link rel="stylesheet" href="../lesson11/css/preston-medium.css">
+    <link rel="stylesheet" href="../lesson11/css/sodaspring-style.css">
+    <link rel="stylesheet" href="../lesson11/css/sodaspring-medium.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Weather Check-Preston</title>
 </head>
 
 <body>
     <div id='content'>
-        <div id='message'>
-            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-        </div>
         <header>
             <a href="../lesson11/homepage.html">
                 <img class='logo' src="../lesson11/img/logo.png" alt="weather check logo">
             </a>
-                <h1>Weather Check</h1>
+            <h1>Weather Check</h1>
             <div>Let's open the window to feel the weather.</div>
         </header>
         <nav>
             <ul class='navigation'>
                 <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
                 <li><a href="../lesson11/homepage.html">Home</a></li>
-                <li><a href="../lesson11/preston.html" class='active'>Preston</a></li>
-                <li><a href="../lesson11/sodaspring.html">Soda Springs</a></li>
+                <li><a href="../lesson11/preston.html">Preston</a></li>
+                <li><a href="../lesson11/sodaspring.html" class='active'>Soda Springs</a></li>
                 <li><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
                 <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
                 <li><a href="../lesson11/gallery.html">Gallery</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Preston Idaho</h2>
+            <h2>Soda Springs</h2>
             <div class='hero'>
-                <img class='hero_img' src="../lesson11/img/preston/preston-960.jpg" alt="photo of idaho"
-                    srcset ="../lesson11/img/preston/preston-425.jpg 425w,
-                            ../lesson11/img/preston/preston-600.jpg 600w,
-                            ../lesson11/img/preston/preston-960.jpg 960w"
+                <img class='hero_img' src="../lesson11/img/sodaspring/sodaspring-960.jpg" alt="photo of idaho"
+                    srcset ="../lesson11/img/sodaspring/sodaspring-425.jpg 425w,
+                            ../lesson11/img/sodaspring/sodaspring-600.jpg 600w,
+                            ../lesson11/img/sodaspring/sodaspring-960.jpg 960w"
                     sizes = "50vw">
-                    
+
                 <section class='weather_sum'>
                     <h3 class='wf'>Weather Summary</h3>
                     <p>Currently: <span id='description'></span></p>
@@ -101,43 +98,37 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <h3>Upcoming Events</h3>
-                <div id = 'event'></div>
-            </section>
             <div class='article'>
-                <img class='article_img' src="../lesson11/img/preston/article_img.jpg" alt="img of sky">
-                <h3>After Years of Fighting, Idaho Retains Climate Change in Its Education Guidelines</h3>
-                <p class='author'>By Livia Albeck-Ripka</p>
-                <p>A years-long battle over whether Idaho would require its science teachers to teach about global
-                    warming was resolved Thursday when the State Senate education committee voted to adopt standards
-                    that included sections on human-caused climate change.
-                    Idaho’s legislature had scrubbed all mentions of human-caused climate change from its teaching
-                    standards last year. The State Department of Education then put forth revised standards, but this
-                    month the House education committee voted to gut the supporting content, which was designed to help
-                    teachers assign coursework and included multiple mentions of climate change. On Thursday, the Senate
-                    committee approved the revised standards in full, including the supporting content, on a 6 to 3 vote
-                    that drew support from both parties. Because both chambers did not agree to reject the standards,
-                    they will go into effect.
-                    State Senator Janie Ward-Engelking of Boise, a Democrat on the education committee, said the
-                    supporting content was important to include. “When a new teacher comes in, they need to see all the
-                    concepts that they’re responsible to teach,” Ms. Ward-Engelking said. “To be honest, it’s kind of
-                    embarrassing that it’s been so controversial.”
-                    Emily Her, 17, a senior at Timberline High School in Boise who started a petition and appeared with
-                    her classmates at hearings to support the revised standards, said she was glad that all students in
-                    Idaho would learn about climate change. “It was definitely a group effort, and I was really happy
-                    that it paid off and that they decided to listen to us,” she said</p>
+                <img class='article_img' src="../lesson11/img/sodaspring/sodamountain.jpg" alt="mountain in soda springs">
+                <h3>History of Soda Springs</h3>
+                <p class='author'>From Wikipedia</p>
+                <p>The Oregon Trail passed through Soda Springs. At the time it was known as the "Oasis of Soda
+                    Springs". Between Fort Laramie and Fort Boise, Soda Springs was a major landmark and is the second
+                    oldest settlement in Idaho.[1] Sulphur Springs was the first hot spring that the Oregon Trail
+                    immigrants encountered in the soda springs area. Pyramid springs was discovered by fur trappers and
+                    pioneers, they discovered the springs by noticing mounds of soda formed rock and clay. Johnkirk
+                    Townsends said in his diary, “Our encampment on the 8th was near what are called the’White Clay
+                    pits,” still on Bear River. The soil is soft chalk, white and tenacious: and in the vicinity are
+                    several springs of strong super carbonated water which bubble up with all the activity of artificial
+                    fountains. The taste was very agreeable and refreshing, resembling Saratoga water but not so saline.
+                    The whole plain to the hills is having depressions on their summits from which once issued streams
+                    of water. The extent of these eruptions, at some former period, must have been very great. At about
+                    half a mile distant, is an eruptive thermal spring of the temperature of 90 [degrees], and near this
+                    is an opening in the earth front which a stream of gas issues without water.”</p>
             </div>
             <div class='contact'>
                 <h3>Contact Information</h3>
-                <img class='preston-map' src="../lesson11/img/preston/preston-map.png" alt="map of preston">
-                <p><i class="material-icons">place</i> 53N 2nd E Preston, ID 83263</p>
-                <p><i class="material-icons">local_phone</i> (472) 827-7828</p>
-                <p><i class="material-icons">local_post_office</i> huc@hel.cy</p>
+                <img class='sodasprings-map' src="../lesson11/img/sodaspring/sodasprings-map.jpg" alt="map of soda springs">
+                <p><i class="material-icons">place</i> E 1st St S, Soda Springs, ID 83276</p>
+                <p><i class="material-icons">local_phone</i> (684) 887-2428</p>
+                <p><i class="material-icons">local_post_office</i> kopo@oguku.bo</p>
                 <div class="social">
-                    <a href="http://www.facebook.com"><img  class='fb' src="../lesson11/img/preston/facebook.png" alt="facebook icon"></a>
-                    <a href="http://www.instagram.com"><img class='ig' src="../lesson11/img/preston/instagram.jpg" alt="instagram icon"></a>
-                    <a href="http://www.youtube.com"><img class='yb' src="../lesson11/img/preston/youtube.jpg" alt="youtube icon"></a>
+                    <a href="http://www.facebook.com"><img class='fb' src="../lesson11/img/preston/facebook.png"
+                            alt="facebook icon"></a>
+                    <a href="http://www.instagram.com"><img class='ig' src="../lesson11/img/preston/instagram.jpg"
+                            alt="instagram icon"></a>
+                    <a href="http://www.youtube.com"><img class='yb' src="../lesson11/img/preston/youtube.jpg"
+                            alt="youtube icon"></a>
                 </div>
             </div>
         </main>
@@ -147,19 +138,18 @@
                 <br><span id='current-date'></span>
             </div>
         </footer>
-        <script src="../lesson11/js/preston-style.js"></script>
+        <script src="../lesson11/js/sodaspring-style.js"></script>
         <script src="../lesson11/js/preston-windchill.js"></script>
-        <script src="../lesson11/js/preston-weathersummary.js"></script>
-        <script src='../lesson11/js/preston-event.js'></script>
+        <script src="../lesson11/js/sodaspring-weathersummary.js"></script>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
     </script>
     <script>
-      WebFont.load({
-        google: {
-          families: ['Mukta', 'Sriracha']
-        }
-      });
+        WebFont.load({
+            google: {
+                families: ['Mukta', 'Sriracha']
+            }
+        });
     </script>
 </body>
 

@@ -62,9 +62,10 @@ label.required:after {
 .form-item input:required:valid {
     border-left: green solid 4px;
 }
-div {
+main {
     font-family: Mukta, Helvetica, sans-serif;
     margin:30px;
+    line-height:30px;
     font-size:16px;
 }
 form input {
@@ -74,16 +75,27 @@ form input {
 }
 .form-item-button {
     background-color:  #dbc2bc;
-    text-align: center;
     border-radius: 5px;
     width: 180px;
     height: 30px;
-    font-size: 1.1rem;;
+    font-size: 1.1rem;
+    margin: 10px;
 }
 input[type=radio] {
     display:inline-block;
     width:20px;
     height:10px;
+}
+legend {
+    font-size:1.2rem;
+    
+}
+fieldset {
+    border-radius: 10px;
+    margin:20px;
+}
+fieldset div{
+    padding:10px;
 }
 .level {
     margin: 15px;
