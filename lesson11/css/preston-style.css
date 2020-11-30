@@ -1,0 +1,145 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mukta&family=Sriracha&display=swap'); */
+
+#content {
+    min-height:100vh;
+}
+header, footer {
+	background-color:#a3bdd6;
+	display: flex;
+	flex-flow: column; 
+	align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: Mukta, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    font-family: 'Sriracha', cursive;
+}
+h2,h3 {
+    color: #677f96;
+    font-family: "Sriracha";
+    text-align:center;
+}
+p, ul {
+    font-family: Mukta, Helvetica, sans-serif;
+    font-size:16px;
+}
+nav {
+    background-color: #dbc2bc;
+    text-align: center;
+}
+.navigation {
+    list-style:none;
+    padding:0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.navigation li:first-child {
+    display:block;
+}
+.navigation li {
+    display:none;
+}
+nav a, nav ul{
+	display: block;
+	color: #2e4357;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Mukta, Helvetica, sans-serif;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: white;
+}
+.responsive li{
+    display:block;
+}
+.active {
+    color: rgba(179, 66, 118, 0.787);
+}
+main {
+    margin:20px;
+}
+.author {
+    text-align: center;
+}
+.article, .contact{
+    border-style:groove;
+}
+main p {
+    padding-left:15px;
+    padding-right:15px;
+}
+#message{
+    background-color: rgb(198, 211, 86);
+    color:black;
+    font-family: Mukta, Helvetica, sans-serif;
+    line-height: 3em;
+    padding-left:8px;
+    display: none;
+}
+.hero_img {
+    width: 100%;
+}
+.wf {
+    color:rgb(24, 24, 24);
+    font-size:16px;
+}
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border:none;
+}
+.weather_sum {
+	position: absolute;
+	top:1px;
+	left: 20px;
+    background:#a3bdd6;
+    margin-top:15px;
+    opacity: .8;
+    color: rgb(24, 24, 24);
+    padding:5px;
+    line-height: 0.5rem;
+}
+.weather_sum p{
+    font-size:14px;
+}
+h3 {
+    display:none;
+}
+.fiveday{
+    display:none;
+}
+.article_img {
+    width:90%;
+    padding:10px;
+}
+.hero, .article,.contact {
+    margin:10px;
+}
+.contact {
+    background-color:#dbc2bc;
+}
+.contact p, .social{
+    padding-left:3rem;
+    font-size:15px;
+}
+.preston-map {
+    display:none;
+}
+footer, footer a {
+    color: black;
+    font-family: Mukta, Helvetica, sans-serif;
+    font-size:13px;
+}
+.social {
+    border-style: none;
+}
+.fb, .ig, .yb {
+    width:1.8rem;
+    border-radius: 5px;;
+}

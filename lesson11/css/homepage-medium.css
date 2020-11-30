@@ -1,0 +1,75 @@
+@media only screen and (min-width:37.5em) {
+    /* #town1, #town2, #town3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #town1:nth-child(odd) img, #town2:nth-child(odd) img, #town3:nth-child(odd) img  {
+        grid-column: 2;
+      }
+    .towncatelog:nth-child(odd) {
+        grid-column: 1;
+        grid-row: 1;
+    } */
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; 
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .town-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .town-card:nth-child(odd) img{
+        grid-column: 2;
+      }
+    .town-card:nth-child(odd) .town-summary {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+}
+
+@media only screen and (min-width:60em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; 
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+        font-size:1.1rem;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .snowflake {
+        display:none;
+    }
+    .town-cards {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .town-summary {
+        grid-column: 1/2;
+    }
+
+    .town-img img{
+        width:100%;
+        grid-column: 1/2;
+        
+    }
+    .town-card {
+        display:block;
+        justify-content: center;
+    }
+}

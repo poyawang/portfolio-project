@@ -1,0 +1,96 @@
+#content {
+    min-height:100vh;
+}
+header, footer {
+	background-color:#a3bdd6;
+	display: flex;
+	flex-flow: column; 
+	align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: Mukta, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    font-family: 'Sriracha', cursive;
+}
+h2,h3 {
+    color: #677f96;
+    font-family: "Sriracha";
+    text-align:center;
+}
+h3{
+    font-size: 1.7rem;
+}
+p, ul {
+    font-family: Mukta, Helvetica, sans-serif;
+    font-size:20px;
+}
+nav {
+    background-color: #dbc2bc;
+    text-align: center;
+}
+.navigation {
+    list-style:none;
+    padding:0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.navigation li:first-child {
+    display:block;
+}
+.navigation li {
+    display:none;
+}
+nav a, nav ul{
+	display: block;
+	color: #2e4357;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Mukta, Helvetica, sans-serif;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: white;
+}
+.responsive li{
+    display:block;
+}
+.active {
+    color: rgba(179, 66, 118, 0.787);
+}
+footer, footer a {
+    color: black;
+    font-family: Mukta, Helvetica, sans-serif;
+    font-size:13px;
+}
+.snowflake {
+    width:90%;
+    display:block;
+    margin:0 auto;
+    
+}
+.article {
+    background-color: #d4e8fc;
+    padding: 20px 0 20px 0;
+    margin:10px;
+}
+p {
+    text-align: center;
+}
+.town-motto {
+    font-size:16px;
+}
+.town-card {
+    background-color: #f0ddd8;
+    margin:10px;
+    padding:1px 0 15px 0;
+}
+.town-img{
+    width:80%;
+    display: block;
+    margin:0 auto;
+}
