@@ -106,11 +106,15 @@ main p {
 .weather_sum p{
     font-size:14px;
 }
-h3 {
-    display:none;
-}
 .fiveday{
     display:none;
+}
+.fiveforecast{
+    display:none;
+}
+.coming_event {
+    border-style:groove;
+    text-align:center;
 }
 .article_img {
     width:90%;
