@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots webpage for users">
+    <link rel="stylesheet" href="../scoots/css/normalize.css">
+    <link rel="stylesheet" href="../scoots/css/reservations_style.css" >
+    <link rel="stylesheet" href="../scoots/css/reservations_medium.css"  >
+    <title>Scoots</title>
+</head>
+<body>
+    <header>
+        <a href="../scoots/homepage.html">
+            <img class='logo' src="../scoots/img/logo.png" alt="scoots logo">
+        </a>
+        <nav>
+            <ul class='navigation'>
+                <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+                <li><a href="../scoots/homepage.html" >Home</a></li>
+                <li><a href="../scoots/rentals.html">Rentals</a></li>
+                <li><a href="../scoots/reservations.html" class='active'>Reservations</a></li>
+                <li><a href="../scoots/tours.html">Tours</a></li>
+                <li><a href="../scoots/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Reservations</h1>
+        <div class='reserve_input'>
+            <form method='get' action="../scoots/reserve_advanced.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class='form-item'>
+                    <label for="firstname" class="required"> First Name</label>
+                    <input type="text" id="firstname" name="firstname" pattern='[A-Za-z ]{5,}' required>
+                </div>
+                <div class='form-item'>
+                    <label for="lastname" class='required'> Last Name</label>
+                    <input type="text" id="lastname" name="lastname" pattern='(\w| ){5,}' required>
+                </div>
+                <div class='form-item'>
+                    <label for="email" class='email'> Email</label>
+                    <input type="email" id="email" name="email" placeholder="sample@gmail.com">                 
+                </div>
+                <div class='form-item'>
+                    <label for="phone" class='required'> Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="1234567890" required>                  
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Time/Place</legend>
+                <div class='form-item'>
+                    <label for="type">Pick Up Location</label>
+                    <input list="picklocation" id="type" name='type'>
+                </div>
+                <datalist id="picklocation">
+                    <option value="Playa del Carmen-Cozumel Ferry dock">
+                    <option value="Terminal Puerta Maya">
+                </datalist>
+                <div class='form-item'>
+                    <label for="pickdate" class='pickdate'> Pick-up Date</label>
+                    <input type="date" id="pickdate" name="pickdate">
+                </div>
+                <div class='form-item'>
+                    <label for="type">Pick-Up Time</label>
+                    <input list="picktime" id="type" name='type'>
+                </div>
+                <datalist id="picktime">
+                    <option value="10:00">
+                    <option value="11:00">
+                    <option value="12:00">
+                    <option value="13:00">
+                    <option value="14:00">
+                    <option value="15:00">
+                    <option value="16:00">
+                    <option value="17:00">
+                    <option value="18:00">
+                </datalist>
+                <div class='form-item'>
+                    <label for="type">Return Location</label>
+                    <input list="returnlocation" id="type" name='type'>
+                </div>
+                <datalist id="returnlocation">
+                    <option value="Playa del Carmen-Cozumel Ferry dock">
+                    <option value="Terminal Puerta Maya">
+                </datalist>
+                <div class='form-item'>
+                    <label for="returndate" class='returndate'> Return Date</label>
+                    <input type="date" id="returndate" name="returndate">
+                </div>
+                <div class='form-item'>
+                    <label for="type">Return Time</label>
+                    <input list="returntime" id="type" name='type'>
+                </div>
+                <datalist id="returntime">
+                    <option value="10:00">
+                    <option value="11:00">
+                    <option value="12:00">
+                    <option value="13:00">
+                    <option value="14:00">
+                    <option value="15:00">
+                    <option value="16:00">
+                    <option value="17:00">
+                    <option value="18:00">
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Rental Type</legend>
+                    <div class='form-item'>
+                        <label class='type'><input type='radio' name='level' value='scooter'>Honda Motor Scooters</label>
+                        <input list="scooter" id="type" name='type'>
+                    </div>
+                    <datalist id="scooter">
+                        <option value="Honda Metropolitan scooter(49cc)">
+                        <option value="Honda Dio scooter (110cc)">
+                        <option value="Honda PCX150 scooter (149cc)">
+                    </datalist>
+                    <div class='form-item'>
+                        <label class='type'><input type='radio' name='level' value='atv'>ATV side-by-side</label>
+                        <input list="atv" id="type" name='type'>
+                    </div>
+                    <datalist id="atv">
+                        <option value="Honda Pioneer ATV">
+                    </datalist>
+                    <div class='form-item'>
+                        <label class='type'><input type='radio' name='level' value='jeep'>Jeep</label>              
+                        <input list="jeep" id="type" name='type'>
+                    </div>
+                    <datalist id="jeep">
+                        <option value="Jeep Wrangler - 4 door with a/c">
+                        <option value="Jeep Wrangler - 2 door">
+                    </datalist>   
+            </fieldset>
+            <div class='comment'>
+                <label for="comment">Additional Information or Comment</label>
+                <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+            </div>
+            <div class='rental-agreement'>
+                <label class='type'><input type='checkbox' name='agreement' value='agreement'>
+                    I accpet the Terms and Conditions of Scoots online rental, and filled out the <a href="../scoots/rental_agreement.html">Rental Agreement Form</a>.<br>
+                    (click the link to get the form)</label>              
+            </div>
+            <div>
+                <button class='form-item-button' type='submit'>Form Submission</button>
+            </div>
+            </form>
+        </div>
+        
+
+
+    </main>
+
+
+    <footer>
+        <img class='logo' src="../scoots/img/logo.png" alt="footer logo">
+        <div class='home_contact'>
+            <p>Email:kohrik@naowi.ir</p>
+            <p>Tel:(533) 406-6266</p>
+            <a class='home_contact' href='../scoots/contact.html'>CONTACT US NOW</a>
+        </div>
+        <div class="social">
+            <a href="http://www.facebook.com"><img  class='fb' src="../lesson11/img/preston/facebook.png" alt="facebook icon"></a>
+            <a href="http://www.instagram.com"><img class='ig' src="../lesson11/img/preston/instagram.jpg" alt="instagram icon"></a>
+            <a href="http://www.youtube.com"><img class='yb' src="../lesson11/img/preston/youtube.jpg" alt="youtube icon"></a>
+        </div>
+        <div id="copyright">
+            &copy; <span id='year'></span> | Po-Ya Wang | <a href="https://en.wikipedia.org/wiki/Cozumel">Cozumel Island</a> | 
+            <span id='current-date'></span>
+        </div>
+    </footer>  
+    <script src='../scoots/js/basic.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+          google: {
+            families: ['Courgette', 'Libre Baskerville']
+          }
+        });
+      </script>
+</body>
+</html>

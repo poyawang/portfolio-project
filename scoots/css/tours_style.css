@@ -9,13 +9,19 @@ header, footer{
 }
 h1 {
     font-family: 'Courgette', cursive;
-    color:#5A684B;
-    font-size:25px;
+    color: #8f4234c9;
+    font-size:28px;
     text-align: center;
 }
-h2,h3{
+h2{
     font-family: 'Courgette', cursive;
     color:#5A684B;
+    font-size:23px;
+}
+h3 {
+    font-family: 'Courgette', cursive;
+    color:#5A684B;
+    font-size:19px;
 }
 p, ul{
     font-family: 'Libre Baskerville', serif;
@@ -56,52 +62,62 @@ nav a:hover{
 .active {
     color: rgba(179, 66, 118, 0.787);
 }
-.intro_type img{
-    width:100%;
-}
-legend {
-    color:#5A684B;
-    margin-left:1.5rem;
-}
-form {
-    font-family: 'Libre Baskerville', serif;
-    width:80%;
-    margin:0 auto;
-}
-fieldset {
-    display:flex;
-    justify-content: center;
-}
-button {
-    margin-left:5px;
-    color: rgba(179, 66, 118, 0.787);;
-}
-.home_car_type img {
-    width:60%;
-}
-.home_car_type div{
-    text-align: center;
-    border: 1px groove;
-    border-radius: 10px;
-    box-sizing:10px;
-    margin:10px;
-}
-.weather_sum {
-    border: 1px groove;
-    margin:10px;
-    border-radius: 10px;
-}
-.weather_sum p {
-    text-align:center;
-}
-.five_day {
-    color:#32485C;
-    font-family: 'Libre Baskerville', serif;
-    margin:10px;
-}
-.five_forecast {
+.history {
     display:none;
 }
+.history img {
+    width: 100%;
+}
+.history {
+    margin: 10px auto;
+    position: relative;
+    border:none;
+}
+.intro {
+    position: absolute;
+    top:10px;
+    left: 50px;
+    right:50px;
+    background:#c1c4c749;
+    margin-top:15px;
+    opacity: .8;
+    color: rgb(24, 24, 24);
+    padding:10px;
+    line-height: 1.3rem;
+}
+.intro p{
+    font-size:14px;
+    color:black;
+    font-family: 'Libre Baskerville', serif;
+}
+.visit_site div img, .food div img{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+.visit_site h2, .visit_site h3, .food h2, .food h3 {
+    text-align:center;
+}
+.visit_site div{
+    padding:20px;
+    margin:15px;
+    font-size:15px;
+    background-color:rgba(185, 161, 161, 0.349);
+    
+}
+.food div{
+    padding:20px;
+    margin:15px;
+    font-size:15px;
+    background-color:#466b7c2a;
+}
+.visit_site, .food{
+    border: 2px groove;
+    border-radius: 10px;
+    margin:5px;
+}
+
+
 .social {
     border-style: none;
     display:flex;

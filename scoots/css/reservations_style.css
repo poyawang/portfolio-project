@@ -56,52 +56,67 @@ nav a:hover{
 .active {
     color: rgba(179, 66, 118, 0.787);
 }
-.intro_type img{
-    width:100%;
+label.required:after {
+    content:" *";
+    color:red;
+}
+.form-item input:required {
+    border-left: red solid 4px;
+}
+.form-item input:required:valid {
+    border-left: green solid 4px;
+}
+main {
+    font-family: 'Libre Baskerville', serif;
+    margin:30px;
+    font-size:16px;
+}
+form input {
+    display: block;
+    width:250px;
+    height:25px;
+}
+.form-item-button {
+    background-color:  #dbc2bc;
+    border-radius: 5px;
+    width: 180px;
+    height: 30px;
+    font-size: 1.1rem;
+    margin: 20px;
+}
+input[type=radio] {
+    display:inline-block;
+    width:20px;
+    height:10px;
 }
 legend {
-    color:#5A684B;
-    margin-left:1.5rem;
-}
-form {
-    font-family: 'Libre Baskerville', serif;
-    width:80%;
-    margin:0 auto;
+    font-size:1.2rem;
+    
 }
 fieldset {
-    display:flex;
-    justify-content: center;
-}
-button {
-    margin-left:5px;
-    color: rgba(179, 66, 118, 0.787);;
-}
-.home_car_type img {
-    width:60%;
-}
-.home_car_type div{
-    text-align: center;
-    border: 1px groove;
     border-radius: 10px;
-    box-sizing:10px;
     margin:10px;
+    line-height:40px;
 }
-.weather_sum {
-    border: 1px groove;
-    margin:10px;
-    border-radius: 10px;
+.rental-agreement {
+    font-size:12px;
 }
-.weather_sum p {
+.comment {
+    font-size:15px;
+}
+input[type=checkbox] {
+    width:15px;
+
+    
+}
+.email{
     text-align:center;
 }
-.five_day {
-    color:#32485C;
-    font-family: 'Libre Baskerville', serif;
-    margin:10px;
+.agreement{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
 }
-.five_forecast {
-    display:none;
-}
+
 .social {
     border-style: none;
     display:flex;
