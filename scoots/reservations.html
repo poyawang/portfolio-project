@@ -132,6 +132,20 @@
                         <option value="Jeep Wrangler - 2 door">
                     </datalist>   
             </fieldset>
+            <fieldset>
+                <legend>Payment</legend>
+                <div class='form-item'>
+                    <label class='type'>Payment Method</label>
+                    <input list="payment" id="type" name='type'>
+                </div>
+                <datalist id="payment">
+                    <option value="Google Pay">
+                    <option value="Cash">
+                    <option value="Credit Card">
+                    <option value="Debit Card">
+                    <option value="PayPal">
+                </datalist>
+            </fieldset>
             <div class='comment'>
                 <label for="comment">Additional Information or Comment</label>
                 <textarea name="comment" id="comment" cols="30" rows="5"></textarea>

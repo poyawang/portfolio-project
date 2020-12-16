@@ -71,6 +71,9 @@ main {
     margin:30px;
     font-size:16px;
 }
+.advanced {
+    text-align:center;
+}
 form input {
     display: block;
     width:250px;
@@ -106,8 +109,6 @@ fieldset {
 }
 input[type=checkbox] {
     width:15px;
-
-    
 }
 .email{
     text-align:center;

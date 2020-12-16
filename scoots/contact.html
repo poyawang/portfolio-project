@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Scoots webpage for users">
     <link rel="stylesheet" href="../scoots/css/normalize.css">
-    <link rel="stylesheet" href="../scoots/css/rentals_style.css" >
-    <link rel="stylesheet" href="../scoots/css/rentals_medium.css"  >
+    <link rel="stylesheet" href="../scoots/css/contacts_style.css">
+    <link rel="stylesheet" href="../scoots/css/contacts_medium.css">
     <title>Scoot</title>
 </head>
+
 <body>
     <header>
         <a href="../scoots/homepage.html">
@@ -17,15 +19,72 @@
         <nav>
             <ul class='navigation'>
                 <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
-                <li><a href="../scoots/homepage.html" >Home</a></li>
+                <li><a href="../scoots/homepage.html">Home</a></li>
                 <li><a href="../scoots/rentals.html" class='active'>Rentals</a></li>
-                <li><a href="../scoots/reservations.html" >Reservations</a></li>
+                <li><a href="../scoots/reservations.html">Reservations</a></li>
                 <li><a href="../scoots/tours.html">Tours</a></li>
                 <li><a href="../scoots/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
+    <main>
+        <img class='contact-img' src="../scoots/img/contact/contact-jeep.jpg" alt="jeep in contact">
+        <h1>Contact</h1>
+        <div class='contact-us'>
+            <p>PLEASE ENTER THE INFORMATION, <br>WE WILL CONTACT YOU ASAP.</p>
+            <div class='contact-grid'>
+            <div class='form-item' id='name'>
+                <label for="name" class='name'>NAME
+                <input type="type" id="name" name="name"></label>
+            </div>
+            <div class='form-item' id='gender'>
+                <label class='gender'>GENDER
+                    <select name="subject">
+                        <option value="">Please select gender.</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </label>
+            </div>
+            <div class='form-item' id='phone'>
+                <label for="phone" class='phone'>PHONE
+                <input type="tel" id="phone" name="phone"></label>
+            </div>
+            <div class='form-item' id='email'>
+                <label for="email" class='email'>EMAIL
+                <input type="email" id="email" name="email"></label>
+            </div>
+            <div class='form-item' id='question'>
+                <label for="memo">YOUR QUESTIONS
+                <textarea name="memo" id="memo"></textarea></label>
+            </div>
+            </div>
+            <div>
+                <button class='form-item-button' type='submit'>SUBMIT</button>
+            </div>
+        </div>
+        <section class='contact-info'>
+            <div class='playa'>
+                <h3>Playa del Carmen-Cozumel Ferry dock</h3>
+                <iframe
+                    class='playa-map' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d119580.03050141997!2d-86.9669624!3d20.5113108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2stw!4v1608098610560!5m2!1sen!2stw"
+                    width="300" height="600" frameborder="0" style="border:0;" allowfullscreen>
+                </iframe>
+            </div>
+            <div class='terminal'>
+                <h3>Termianl Peurta Maya</h3>
+                <iframe
+                    class='terminal-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52718.68840135395!2d-87.00349284890007!3d20.47279631589662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2stw!4v1608098837175!5m2!1sen!2stw"
+                    width="300" height="600" frameborder="0" style="border:0;" allowfullscreen>
+                </iframe>
+            </div>
+            <div class='contact'>
+                <p>REACH OUT TO US!</p>
+                <p>TEL: (533) 406-6266 </p>
+                <p>EMAIL: Email:kohrik@naowi.ir</p>
+            </div>
+    </section>
+    </main>
 
 
 
@@ -40,23 +99,28 @@
             <a class='home_contact' href='../scoots/contact.html'>CONTACT US NOW</a>
         </div>
         <div class="social">
-            <a href="http://www.facebook.com"><img  class='fb' src="../lesson11/img/preston/facebook.png" alt="facebook icon"></a>
-            <a href="http://www.instagram.com"><img class='ig' src="../lesson11/img/preston/instagram.jpg" alt="instagram icon"></a>
-            <a href="http://www.youtube.com"><img class='yb' src="../lesson11/img/preston/youtube.jpg" alt="youtube icon"></a>
+            <a href="http://www.facebook.com"><img class='fb' src="../lesson11/img/preston/facebook.png"
+                    alt="facebook icon"></a>
+            <a href="http://www.instagram.com"><img class='ig' src="../lesson11/img/preston/instagram.jpg"
+                    alt="instagram icon"></a>
+            <a href="http://www.youtube.com"><img class='yb' src="../lesson11/img/preston/youtube.jpg"
+                    alt="youtube icon"></a>
         </div>
         <div id="copyright">
-            &copy; <span id='year'></span> | Po-Ya Wang | <a href="https://en.wikipedia.org/wiki/Cozumel">Cozumel Island</a> | 
+            &copy; <span id='year'></span> | Po-Ya Wang | <a href="https://en.wikipedia.org/wiki/Cozumel">Cozumel
+                Island</a> |
             <span id='current-date'></span>
         </div>
-    </footer>  
+    </footer>
     <script src='../scoots/js/basic.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
-          google: {
-            families: ['Courgette', 'Libre Baskerville']
-          }
+            google: {
+                families: ['Courgette', 'Libre Baskerville']
+            }
         });
-      </script>
+    </script>
 </body>
+
 </html>

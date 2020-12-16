@@ -13,17 +13,20 @@
     .navigation li:first-child {
         display: none;
     }
-    .type h3 {
-        font-size:20px;
-    }
-    .type{
-       display:grid;
-       grid-template-columns: repeat(2, 1fr);
-    }
-    .requirement {
+    .contact-grid {
         display:grid;
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(2,1fr);
+        
     }
+    .contact-info {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:5px;
+    }
+    .contact {
+        display:none;
+    }
+    
 
 }
 @media only screen and (min-width: 60em) {
@@ -41,20 +44,23 @@
     .navigation li:first-child {
         display: none;
     }
-    .type{
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-     }
-     .requirement {
-         display:grid;
-         grid-template-columns: repeat(5, 1fr)
-     }
-    button {
-        width:250px;
-        height:50px;
-        font-size:20px;
+    .contact-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
-    .service ul {
-        margin-left:35rem;
+    #name {
+        grid-column: 2/3;
     }
+    #gender {
+        grid-column:3/4;
+    }
+    #phone{
+        grid-column:2/3;
+    }
+    #question {
+        grid-column:2/4;
+    }
+    .contact-img {
+        display:none;
+    }
+
 }

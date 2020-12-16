@@ -56,46 +56,73 @@ nav a:hover{
 .active {
     color: rgba(179, 66, 118, 0.787);
 }
-.type div {
-    border: 1px solid rgb(209, 195, 195);
-    border-radius: 10px;
-    margin:20px;
-    padding-left:40px;
-}
-.type h3 {
-    text-align:center;
-}
-.type div img{
-    width:70%;
-}
-.requirement {
-    border:1px solid rgba(167, 151, 151, 0.63);
-    border-radius: 10px;
-    margin:20px;
-    text-align:center;
-}
-.service {
-    border:1px solid rgba(167, 151, 151, 0.63);
-    border-radius: 10px;
-    margin:20px;
-}
-.service h2 {
-    text-align:center;
-}
-.service ul{
-    line-height:1.8rem;
-}
-button {
-    color:red;
-    background-color:rgba(197, 156, 163, 0.342);
-    border:1px groove;
-    height:30px;
+.contact-img {
+    width:100%;
     display:block;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.button {
-    margin:10px;
+.contact-us label {
+    display:block;
+    float: left;
+    width: 10em;
+    margin-right: 1em;
 }
+.contact-us input, select {
+    width: 15em;
+    height: 1.3em;
+    border: 0px solid;
+}
+.contact-us p{
+    font-size:15px;
+    text-align:center;
+    color:#3e6595;
+}
+.form-item-button {
+    background-color:  #8f423474;
+    border-radius: 5px;
+    width: 180px;
+    height: 30px;
+    font-size: 1.1rem;
+    display: block;
+    margin:auto;
+}
+.contact-us div {
+    border-radius: 10px;
+    line-height:20px;
+}
+.form-item {
+    display: flex;
+    margin-left: 3rem;
+    padding-top:1.2rem;
+}
+#memo {
+    width:15em;
+    height:7em;
+    margin-bottom: 5px;
+}
+.contact-us {
+    background-color: rgba(175, 170, 170, 0.384);
+    background-clip: border-box;
+    padding: 10px;  
+}
+.playa, .terminal {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.playa iframe, .terminal iframe{
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.contact {
+    margin-left: 20px;
+}
+.contact-info {
+    padding: 10px;
+}
+
 
 
 
