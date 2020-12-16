@@ -47,16 +47,16 @@
     .contact-grid {
         grid-template-columns: repeat(4, 1fr);
     }
-    #name {
+    #aname {
         grid-column: 2/3;
     }
-    #gender {
+    #agender {
         grid-column:3/4;
     }
-    #phone{
+    #aphone{
         grid-column:2/3;
     }
-    #question {
+    #aquestion {
         grid-column:2/4;
     }
     .contact-img {
