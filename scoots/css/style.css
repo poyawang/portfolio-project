@@ -83,7 +83,6 @@ button {
     text-align: center;
     border: 1px groove;
     border-radius: 10px;
-    box-sizing:10px;
     margin:10px;
 }
 .weather_sum {
